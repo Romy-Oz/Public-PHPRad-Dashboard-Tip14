@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `barang` (
-  `NamaBarangRomyOz` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `NamaBarang` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `HargaBarang` int NOT NULL,
   `JumlahBarang` int NOT NULL,
   `KodeBarang` varchar(6) NOT NULL
@@ -38,7 +38,7 @@ CREATE TABLE `barang` (
 -- Dumping data for table `barang`
 --
 
-INSERT INTO `barang` (`NamaBarangRomyOz`, `HargaBarang`, `JumlahBarang`, `KodeBarang`) VALUES
+INSERT INTO `barang` (`NamaBarang`, `HargaBarang`, `JumlahBarang`, `KodeBarang`) VALUES
 ('Abu Gosok', 850, 10, 'ABU001'),
 ('Headphone Sony', 1500000, 5, 'HPS001'),
 ('Kamera DSLR', 8000000, 3, 'KMD001'),
@@ -188,7 +188,7 @@ INSERT INTO `jualh` (`JualHid`, `PelangganKode`, `Tanggal`) VALUES
 
 CREATE TABLE `pelanggan` (
   `PelangganNama` varchar(255) NOT NULL,
-  `PelangganHPRomyOz` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `PelangganHP` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `PelangganKode` varchar(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -196,7 +196,7 @@ CREATE TABLE `pelanggan` (
 -- Dumping data for table `pelanggan`
 --
 
-INSERT INTO `pelanggan` (`PelangganNama`, `PelangganHPRomyOz`, `PelangganKode`) VALUES
+INSERT INTO `pelanggan` (`PelangganNama`, `PelangganHP`, `PelangganKode`) VALUES
 ('Abdullah', '083929322299', 'ABD001'),
 ('Andi', '82345678901', 'AND001'),
 ('Budi', '82939482349', 'BUD001'),
